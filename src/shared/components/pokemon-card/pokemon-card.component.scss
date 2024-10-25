@@ -1,0 +1,60 @@
+.pokemon-card {
+  background-color: #77b35b;
+  width: 344px;
+  height: 196px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start; /* Alinha os itens no início do eixo transversal */
+  padding: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .pokemon-info {
+    flex: 1;
+    padding: 10px;
+
+    h3 {
+      width: 127px;
+      height: 33px;
+      margin: 0; /* Remove a margem padrão */
+      opacity: 1; /* Mude para 1 para torná-lo visível */
+      color: #ffffff; /* Cor do texto */
+    }
+
+    p {
+      font-size: 14px;
+      color: #ffffff;
+      width: 168px; /* Largura conforme solicitado */
+      height: 64px; /* Altura conforme solicitado */
+      margin: 5px 0 0 0; /* Margem acima para espaçamento */
+      opacity: 1; /* Mude para 1 para torná-lo visível */
+    }
+
+    /* Se você tiver ícones, adicione esta seção */
+    .icons {
+      display: flex;
+      justify-content: flex-end; /* Alinha os ícones à direita */
+      margin-top: 10px; /* Espaço acima dos ícones */
+
+      img {
+        /* Se você estiver usando imagens para os ícones */
+        width: 24px; /* Ajuste o tamanho conforme necessário */
+        height: 24px; /* Ajuste o tamanho conforme necessário */
+        margin-left: 5px; /* Espaçamento entre os ícones */
+      }
+    }
+  }
+
+  .pokemon-image {
+    width: 123px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end; /* Alinha a imagem ao fundo do container */
+    justify-content: flex-end; /* Alinha a imagem à direita */
+
+    img {
+      width: 100%;
+      height: auto;
+      opacity: 1; /* Mude para 1 para torná-la visível */
+    }
+  }
+}

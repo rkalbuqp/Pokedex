@@ -1,6 +1,11 @@
-<div *ngFor="let pokemon of pokemons" class="pokemon">
-  <img [src]="pokemon.imageUrl" alt="{{ pokemon.name }}" />
-  <span>{{ pokemon.name | titlecase }}</span>
+<!-- Usando um componente para cada card de Pokémon -->
+<div class="pokemon-grid">
+  <app-pokemon-card
+    *ngFor="let pokemon of pokemons"
+    [pokemonImage]="pokemon.imageUrl"
+    [pokemonName]="pokemon.name"
+    [pokemonDescription]="'This is a Pokémon description.'"></app-pokemon-card>
 </div>
 
-<router-outlet />
+<!-- Exibe o conteúdo de uma rota -->
+<router-outlet></router-outlet>
