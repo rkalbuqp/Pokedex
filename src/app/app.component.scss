@@ -1,4 +1,5 @@
 // Variáveis para cores e tamanhos
+$bg-color: #dd092f;
 $primary-color: #77b35b;
 $secondary-color: #ffcb05;
 $text-color: #ffffff;
@@ -8,6 +9,33 @@ $font-size-medium: 18px;
 $border-radius: 8px;
 $spacing-small: 10px;
 $spacing-medium: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; /* Zera todas as bordas */
+  outline: 0; /* Remove o contorno de foco */
+  background: transparent; /* Remove o fundo padrão */
+  box-shadow: none; /* Remove qualquer sombra padrão */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color; /* Define a cor de fundo */
+  overflow: hidden; /* Opcional: se você não quiser barras de rolagem */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 
 // Estilo para títulos h2
 h2 {
@@ -61,6 +89,7 @@ ul {
     font-size: $font-size-medium;
   }
 }
+
 .pokemon-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
