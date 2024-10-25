@@ -1,25 +1,63 @@
+// Variáveis para cores e tamanhos
+$primary-color: #77b35b;
+$secondary-color: #ffcb05;
+$text-color: #ffffff;
+$font-family: sans-serif;
+$font-size-large: 27px;
+$font-size-medium: 18px;
+$border-radius: 8px;
+$spacing-small: 10px;
+$spacing-medium: 20px;
+
+// Estilo para títulos h2
 h2 {
-  color: #2a75bb;
-  text-align: center;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: $font-size-large;
 }
 
+// Lista sem estilo padrão e com espaçamento removido
 ul {
   list-style-type: none;
   padding: 0;
 
   li {
-    background-color: #f0f0f0;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: $primary-color;
+    margin: $spacing-small 0;
+    padding: $spacing-small;
+    border-radius: $border-radius;
 
     strong {
-      color: #3b4cca;
+      color: $text-color;
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: $font-size-large;
     }
 
     a {
-      color: #ffcb05;
+      color: $secondary-color;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+}
+
+// Estilo para a listagem dos Pokémon
+.pokemon {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-small;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: $spacing-small;
+  }
+
+  span {
+    font-size: $font-size-medium;
   }
 }
