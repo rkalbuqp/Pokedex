@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms'; // Importando o FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchBarComponent } from '../shared/components/search-bar/search-bar.component';
 import { PokemonCardComponent } from '../shared/components/pokemon-card/pokemon-card.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, PokemonCardComponent],
+  declarations: [AppComponent, PokemonCardComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
